@@ -22,6 +22,10 @@ body {
 
 /*container1*/
 
+.container1 {
+    display: none; /* invisivel por hora*/
+}
+
 .container1 h3 {
     font-size: 25px;
 }
@@ -40,3 +44,27 @@ button:hover {
 
 /*container2*/
 
+.container2 h3 {
+    margin: 0;
+    font-size: 25px;
+}
+
+hr {
+    width: 90%;
+}
+
+.label-peso, .label-altura {
+    width: 90%;
+    box-sizing: border-box;
+    margin: 10px;
+    font-size: 20px;
+}
+
+#peso, #altura {
+    width: 130px;
+    margin: 5px;
+}
+
+.container2 button {
+
+}
