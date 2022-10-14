@@ -45,6 +45,9 @@ button:hover {
 
 /*container2*/
 
+.container2 {
+    display: none; /* invisivel por hora*/
+}
 
 .container2 h3 {
     margin: 0;
@@ -57,7 +60,7 @@ hr {
 
 .label-Weight, .label-height {
     display: flex;
-    align-items: center;
+    align-items: center;    
     width: 90%;
     margin: 10px;
     font-size: 20px;
@@ -65,11 +68,25 @@ hr {
 }
 
 #Weight, #height {
-    width: 130px;
+    width: 110px;
     margin: 5px;
     margin-left: auto;
 }
 
 .container2 button {
     margin-top: 10px;
+}
+
+/*container3*/
+
+.btn-result {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.btn-result1 {
+    width: 40%;
+    margin-right: 10px;
 }
