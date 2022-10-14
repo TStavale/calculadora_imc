@@ -11,27 +11,27 @@
     <div class="container">
         <div class="container1">
             <h3>Calcule o seu IMC</h3>
-            <button>Start</button>
+            <button onclick="change(1,2)">Start</button>
         </div>
         <div class="container2">
             <h3>IMC</h3>
             <hr>
             <div class="label-Weight">
                 <label for="Weight"> Digite o seu peso (Kg):</label>
-                <input type="number" placeholder="Peso" id="Weight" required>
+                <input type="number" placeholder="Peso" id="Weight">
             </div>
             <div class="label-height">
                 <label for="height"> Digite a sua altura(cm):</label>
-                <input type="number" placeholder="Altura" id="height" required>
+                <input type="number" placeholder="Altura" id="height">
             </div>
-            <button type="submit">Calcular</button>
+            <button type="submit" onclick="validate()">Calcular</button>
         </div>
         <div class="container3">
             <h3>Resutado!</h3>
             <h2 id="result">...</h2>
             <div class="btn-result">
-            <button class="btn-result1" type="submit">Calcular Novamente</button>
-            <button class="btn-result2" type="submit">Finalizar</button>
+            <button onclick="change(3,2)" class="btn-result1" type="submit">Calcular Novamente</button>
+            <button onclick="change(3,1)" class="btn-result2" type="submit">Finalizar</button>
             </div>
         </div>
     </div>
