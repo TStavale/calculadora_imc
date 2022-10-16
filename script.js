@@ -56,8 +56,29 @@ function validate () {
         }
  
     }
+    /* Os Índices do IMC */
     else {
-        console.log('Ok'); /* Por hora */
+        let imc = Weight.value / (height.value * height.value);
+        
+        if (imc < 18.5) {
+            console.log('Magreza | Obesidade: 0');
+        }
+
+        else if (imc >= 18.5 && imc < 25) {
+            console.log('Normal | Obesidade: 0');
+        }
+
+        else if (imc >= 25 && imc < 30) {
+            console.log('Sobrepeso | Obesidade: I');
+        }
+
+        else if (imc >= 30 && imc < 40) {
+            console.log('Obesidade | Obesidade: II');
+        }
+
+        else {
+            console.log('Obesidade Grave | Obesidade: III');
+        }
     }
 
 }
