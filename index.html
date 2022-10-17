@@ -22,13 +22,15 @@
             </div>
             <div class="label-height">
                 <label for="height"> Digite a sua altura(M):</label>
-                <input type="number" placeholder="altura" id="height" step="0.01">
+                <input type="number" placeholder="Exemplo 1,75" id="height" step="0.01">
             </div>
-            <button type="submit" onclick="validate()">Calcular</button>
+            <div class="btn-container2">
+            <button type="submit" onclick="validate()" class="container2-btn1">Calcular</button>
+            </div>
         </div>
         <div class="container3">
             <h3>Resutado!</h3>
-            <h2 id="result">...</h2>
+            <h2 id="result"></h2>
             <div class="btn-result">
             <button onclick="change(3,2)" class="btn-result1" type="submit">Calcular Novamente</button>
             <button onclick="change(3,1)" class="btn-result2" type="submit">Finalizar</button>

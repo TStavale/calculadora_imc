@@ -79,8 +79,14 @@ hr {
     margin-left: auto;
 }
 
-.container2 button {
-    margin-top: 10px;
+.btn-container2 {
+    display: flex;
+    align-items: center;
+
+}
+
+.container2-btn1 {
+    margin-right: 10px;
 }
 
 /*container3*/
@@ -89,6 +95,11 @@ hr {
     display: none;
     flex-direction: column;
 
+}
+
+.container3 h3 {
+    font-size: 25px;
+    margin-top: 10px;
 }
 
 .btn-result {

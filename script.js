@@ -59,26 +59,39 @@ function validate () {
     /* Os Índices do IMC */
     else {
         let imc = Weight.value / (height.value * height.value);
+        const result = document.getElementById('result')
         
         if (imc < 18.5) {
             console.log('Magreza | Obesidade: 0');
+            result.style.color = 'yellow'
+            result.innerHTML = 'Magreza | Obesidade: 0';
         }
 
         else if (imc >= 18.5 && imc < 25) {
             console.log('Normal | Obesidade: 0');
+            result.style.color = '#00FA9A'
+            result.innerHTML = 'Normal | Obesidade: 0';
         }
 
         else if (imc >= 25 && imc < 30) {
             console.log('Sobrepeso | Obesidade: I');
+            result.style.color = 'yellow'
+            result.innerHTML = 'Sobrepeso | Obesidade: I';
         }
 
         else if (imc >= 30 && imc < 40) {
             console.log('Obesidade | Obesidade: II');
+            result.style.color = 'red'
+            result.innerHTML = 'Obesidade | Obesidade: II';
         }
 
         else {
             console.log('Obesidade Grave | Obesidade: III');
+            result.style.color = 'red'
+            result.innerHTML = 'Obesidade Grave | Obesidade: III';
         }
+
+        change(2,3)
     }
 
 }
