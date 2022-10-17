@@ -28,10 +28,19 @@ function change(CurrentContainer,NextContainer) {
     }
     else {
         dispFlex = DivContainer3;
+        Weight.value = '';
+        height.value = '';
     }
 
     dispFlex.style.display = 'flex';
 
+}
+
+/* Botão Limpar */
+const btnclear = document.addEventListener ('click');
+function cleaninputs (btnclear) {
+    Weight.value = '';
+    height.value = '';
 }
 
 /* Validate */
@@ -91,7 +100,7 @@ function validate () {
             result.innerHTML = 'Obesidade Grave | Obesidade: III';
         }
 
-        change(2,3)
+        change(2,3);
     }
 
 }
