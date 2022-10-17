@@ -10,8 +10,6 @@ Para esse projeto usei HTML, CSS e JavaScript.
 
 <img src="./assets/img/calc-imc.png">
 
-<img src="./assets/img/">
-
 <h2>ACESSE</h2>
 
 (https://tstavale.github.io/calculadora_imc/)
